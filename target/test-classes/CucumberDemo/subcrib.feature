@@ -19,7 +19,7 @@ so that I may receive the newsletters from provider
 
  Examples: 
  |email|
-|	test13@gmail.com|
+|	test23@gmail.com|
 
 
  Scenario Outline: Show message error for fields blank
@@ -32,7 +32,7 @@ so that I may receive the newsletters from provider
  Then I see "This is required field"
  Examples: 
  |email|
- |	test13@viettel.com|
+ |	test23@viettel.com|
  
 Scenario Outline: Default value of Gender is “Không xác định” and Defaul value of NewsType is "Nhận tất cả các loại tin"
 
@@ -43,10 +43,10 @@ Scenario Outline: Default value of Gender is “Không xác định” and Defau
  And I see NewsType "<NewsType>"
  Examples: 
  |email					|gender					|	NewsType									|		
- |test13@gm.com	|Không xác định	|	Nhận tất cả các loại tin	|
+ |test23@gm.com	|Không xác định	|	Nhận tất cả các loại tin	|
  
 @tag1
-Scenario Outline: Show popup message "Bạn đã đăng ký thành công"
+Scenario Outline: Show popup message "success"
 
 	Given I am staying testmaster
  	When I enter email as "<email>"
@@ -56,5 +56,5 @@ Scenario Outline: Show popup message "Bạn đã đăng ký thành công"
  	Then I see popup message "success"
 	Examples: 
  	|email|
- 	|	test14@cn.com|
+ 	|	test23@cn.com|
  	
