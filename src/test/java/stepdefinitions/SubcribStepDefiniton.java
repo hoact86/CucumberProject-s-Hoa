@@ -26,7 +26,7 @@ public class SubcribStepDefiniton {
 	@Given("^I am staying testmaster$")
 	public void i_am_staying_testmaster()   {
 	    // Write code here that turns the phrase above into concrete actions
-	    driver.get("http://testmaster.vn/");	    
+	    driver.get("http://testmaster.vn/admin");	    
 	}
 	
 	@When("^I provide invalid value for email$")

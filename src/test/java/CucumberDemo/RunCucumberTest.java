@@ -6,9 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features= {"src\\test\\resources\\CucumberDemo"
+		features= {"src\\test\\resources\\CucumberDemo\\subcrib.feature"
 		},
-		tags = {"@tag1"},
 		plugin = {"pretty","html:target/HtmlReport"},
 		glue="stepdefinitions",
 		monochrome=true
